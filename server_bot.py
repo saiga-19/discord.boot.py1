@@ -4,7 +4,7 @@ from discord.ext import commands
 TOKEN = os.environ["DISCORD_TOKEN"]
 GROQ_KEY = os.environ["GROQ_API_KEY"]
 OWNER_ID = int(os.environ["OWNER_ID"])
-MODEL = "allam-2-7b"
+MODEL = os.environ.get("MODEL_NAME", "allam-2-7b")
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 
 SEP = "・"  # الفاصل بين الإيموجي والاسم وبين كلمات الاسم، غيره إذا تبي
