@@ -386,11 +386,9 @@ TOOLS = [
     tool("set_slowmode", "وضع بطيء بالثواني", {"channel": S, "seconds": I}, ["channel", "seconds"]),
     tool("lock_channel", "اقفل أو افتح قناة", {"channel": S, "locked": {"type": "boolean"}}, ["channel", "locked"]),
     tool("purge", "امسح آخر N رسالة (تحتاج تأكيد)", {"channel": S, "amount": I}, ["channel", "amount"]),
-    tool("assign_role", "أعط عضو رتبة أو شيلها منه. user: منشن أو ايدي أو اسم. action: add أو remove",
-         {"user": S, "role": S, "action": S}, ["user", "role"]),
+    tool("assign_role", "أعط عضو رتبة أو شيلها منه. user: منشن أو ايدي أو اسم. action: add أو remove", {"user": S, "role": S, "action": S}, ["user", "role"]),
     tool("delete_role", "احذف رتبة (تحتاج تأكيد)", {"name": S}, ["name"]),
-    tool("create_scheduled_event", "أنشئ حدثاً مجدولاً في السيرفر. start_time_iso بصيغة ISO مثل 2026-06-01T20:00:00", 
-         {"name": S, "description": S, "start_time_iso": S, "channel_name": S}, ["name", "start_time_iso"]),
+    tool("create_scheduled_event", "أنشئ حدثاً مجدولاً في السيرفر. start_time_iso بصيغة ISO مثل 2026-06-01T20:00:00", {"name": S, "description": S, "start_time_iso": S, "channel_name": S}, ["name", "start_time_iso"]),
     tool("list_scheduled_event", "اعرض الأحداث المجدولة في السيرفر", {}, []),
 ]
 
