@@ -6,7 +6,7 @@ from collections import defaultdict
 TOKEN = os.environ["DISCORD_TOKEN"]
 GROQ_KEY = os.environ["GROQ_API_KEY"]
 OWNER_ID = int(os.environ["OWNER_ID"])
-MODEL = os.environ.get("MODEL_NAME", "openai/gpt-oss-120b")
+MODEL = os.environ.get("MODEL_NAME", "meta-llama/llama-prompt-guard-2-22m")
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 
 SEP = "・"
