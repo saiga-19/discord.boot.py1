@@ -605,7 +605,9 @@ async def on_message(msg: discord.Message):
         await msg.reply(out[:2000])
 
 bot.owner_id = OWNER_ID
-bot.run(TOKEN)import os, re, json, aiohttp, discord
+bot.run(TOKEN)
+
+import os, re, json, aiohttp, discord
 from discord.ext import commands
 from datetime import datetime
 from collections import defaultdict
